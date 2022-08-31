@@ -1,8 +1,7 @@
-<!-- <%- include('./partials/header.ejs') %> -->
+
 <h1>Add a score</h1>
-<nav>
-    <a href="/scores">Home</a>
-</nav>
+<link type="text/css" rel='stylesheet' href='/css/style.css' />
+<div class ="info">
 <form method="POST" action = "/scores">
     <fieldset>
         <label for="name">Name:</label>
@@ -12,7 +11,15 @@
         <label for="score">Score:</label>
         <input id="score" type="text" name="score" placeholder="Enter score">
     </fieldset>
+</info>
 <button>Add Score</button>
+
+<nav>
+    
+
+<a href="/scores">Home</a>
+    
+</nav>
 </form>
 
 

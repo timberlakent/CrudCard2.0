@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router()
 const Score= require('../models/score.js')
+const methodOverride = require("method-override");
+
+
 
 router.get('/',async(req,res)=>{
     console.log('before')
@@ -21,7 +24,7 @@ router.get('/scores',(req,res)=>{
 });
 
 router.get('/edit', (req,res)=>{
-    res.render('edit')
+    res.render('edit.ejs')
 });
 
 
@@ -32,7 +35,7 @@ router.get('/',(req,res)=> {
 
 router.get('/:id', async (req,res)=>{
     const score = await Score.findById(req.params.id);
-    res.render('show.ejs', {
+    res.render('show', {
         score: score,
     });
 });
@@ -56,7 +59,7 @@ router.delete('/:id', (req,res)=> {
     });
 });
 
-router.put('/:id', (req,res) => {
+router.put('/:id',  (req,res) => {
     Score.findByIdAndUpdate(req,params.id, req.body, {new: true}, (err, updatedModel) => {
         res.redirect('/scores')
     });

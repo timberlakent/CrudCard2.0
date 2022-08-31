@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const express = require('express');
 const app = express();
-const Score = require('./models/score')
+const Score = require('./models/score.js')
 const bodyparser = require("body-parser")
 const methodOverride = require('method-override');
 
@@ -9,7 +9,7 @@ const methodOverride = require('method-override');
 
 
 
-dotenv.config({path: 'config.env'})
+dotenv.config({path: '.env'})
 const PORT = process.env.PORT || 8080
 
 //body parser
@@ -34,26 +34,12 @@ app.use(methodOverride('_method'))
 
 
 
-// const scoreController = require('./controllers/scoreController.js')
-// app.use('/scores', scoreController)
-
-// app.get('/',(req,res)=> {
-//     res.render('index')
-// })
-
-// app.get('/scores',(req,res)=>{
-//     res.render('show')
-// })
-
-// app.get('/scores/new',(req,res)=>{
-//     res.render('new');
-// })
-
-
-// app.use('/score', scoreController)
 const scoreController = require('./controllers/scoreController');
 app.use('/scores', scoreController)
 
+ app.get('/',(req,res)=>{
+    res.render('new');
+ })
 
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`);

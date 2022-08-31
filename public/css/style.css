@@ -1,4 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@media only screen and (max-width:1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+}
+
+
+:root{
+    --dark: #2b2d42;
+    --light: grey;
+    --border: purple;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: lavender;
-    margin: 30px;
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: tan;
+    border-color: black;
+    border-bottom: #2b2d42;
+    
+    
+}
+
+p {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 210px;
+    margin-bottom: 100px;
+    background-color: rgb(245, 193, 7);
+    border-radius: 5%;
+    border-style:groove;
+    border-block: 10px;
+    border-width: 1.3em;
+}
+
+a {
+   text-decoration: none;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif:'Courier New', Courier, monospace;
+   padding-top: 90px;
+   font-size: 50px;
+   color: #245673 ;
+   padding-right: 50px;
+
+   
+   
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.info {
+    padding: 50px 50px;
+    text-emphasis: bold;
+    font-size: 40px;
+    margin-top: 115px;
+    margin-left: 40px;
+    
+}
+
+ul {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 43px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 40px;
+    padding-left:  1px;
+    padding-right: 1px;
+}
+
+button {
+    border-radius: 1px;
+    background-color: greenyellow;
+    border: none;
+    font-size: 40px;
+    margin-top: 20px;;
+    
+
+}
+form {
+    font-size: 50px;
+    border-radius: 30px;
+}
+
+#score {
+    font-size: 30px;
+    background-color: rgb(11, 236, 11);
+    color: black;
+    
+}
+
+#name{
+    font-size: 30px;
+    background-color:rgb(6, 239, 6);
+    color: black;
 }
