@@ -1,0 +1,20 @@
+<!-- <%- include('./partials/header.ejs') %> -->
+<h1>Add a score</h1>
+<nav>
+    <a href="/scores">Home</a>
+</nav>
+<form method="POST" action = "/scores">
+    <fieldset>
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter name">
+    </fieldset>
+    <fieldset>
+        <label for="score">Score:</label>
+        <input id="score" type="text" name="score" placeholder="Enter score">
+    </fieldset>
+<button>Add Score</button>
+</form>
+
+
+
+<!-- <%- include('./partials/footer.ejs') %> -->
