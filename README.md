@@ -1,1 +1,4 @@
 # CrudCard2.0
+CrudCard is a Personal score card where you can Create read update and delete your recent golf scores. Its super easy to use!
+
+- I had the app workinmg incredibly well until this morning. Made some minor changes to styling and my PUT would not update. It would go from actually CREATING/POST then to couldnt POST /SCORES to CANT PUT. At one point my update score link completly dissapeared. Although this was a much harder project for me I deffinetly have seen improvement since the last project. Although I didnt get to spend as much time on styling as I wanted to I have deffinetly improved since the last time. I noticed that for styling I was more comnfident in the things I was pulling to style and it was a good suprise. AS of now, the app cannot update which is a little upseting. But everything else works like a charm. I definetly will be returning to this one in the near future! 

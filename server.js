@@ -38,7 +38,7 @@ const scoreController = require('./controllers/scoreController');
 app.use('/scores', scoreController)
 
  app.get('/',(req,res)=>{
-    res.render('new');
+    res.render('new')
  })
 
 app.listen(PORT, () => {
