@@ -1,18 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-@media only screen and (max-width:1024px){
-    table, thead, tbody, th, td, tr{
-        display: block;
-    }
-}
+@media only screen and (max-width:1024px);
 
-
-:root{
-    --dark: #2b2d42;
-    --light: grey;
-    --border: purple;
-
-}
 
 * {
     padding: 0;
@@ -70,16 +59,19 @@ a {
 .info {
     padding: 50px 50px;
     text-emphasis: bold;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 115px;
     margin-left: 40px;
     
 }
 
 ul {
-    text-align: center;
+    text-align: center ;
     margin-top: 80px;
-    font-size: 43px;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
 
 nav {
@@ -115,3 +107,20 @@ form {
     background-color:rgb(6, 239, 6);
     color: black;
 }
+
+.edit{
+    text-align: center;
+    background-color: aqua;
+}
+
+.Home-Button{
+    text-align: left;
+}
+
+.delete-button{ 
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 200px;
+}
+

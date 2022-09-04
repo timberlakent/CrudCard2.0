@@ -23,9 +23,16 @@ router.get('/scores',(req,res)=>{
     res.render('show')
 });
 
+// router.put('/edit', (req,res)=>{
+//     res.render('edit.ejs',{
+//         scores: score,
+    
+//     })
+// });
+
 router.get('/edit', (req,res)=>{
     res.render('edit.ejs')
-});
+})
 
 
 router.get('/',(req,res)=> {
@@ -37,6 +44,8 @@ router.get('/:id', async (req,res)=>{
     const score = await Score.findById(req.params.id);
     res.render('show', {
         score: score,
+       
+       
     });
 });
 
@@ -60,10 +69,11 @@ router.delete('/:id', (req,res)=> {
 });
 
 router.put('/:id',  (req,res) => {
-    Score.findByIdAndUpdate(req,params.id, req.body, {new: true}, (err, updatedModel) => {
+    Score.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, updatedModel) => {
         res.redirect('/scores')
     });
 });
+
 
 
 module.exports = router

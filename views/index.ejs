@@ -8,9 +8,13 @@
         let scoreNumber = i + 1
         %>
         <li>
+    
             <a href="/scores/<%= scores[i].id %>"><%= scores[i].name%> : <%= scores[i].score %></a></li>
+
           <form action="/scores/<%=scores[i].id%>?_method=DELETE" method="POST">
+            <div class="delete-button">
             <input type="submit" value="DELETE" />  
+            </div>
           </form>
          </li>
 

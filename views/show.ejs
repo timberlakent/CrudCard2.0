@@ -5,11 +5,25 @@
 </header>
 <div class ="container">
 <p><%= score.name %> shot a <%= score.score %></p>
+</div>
+<div class ="edit">
+<form action="/scores/<%=score.id%>?_method=PUT" method="POST" >
+    Name: <input type="text" name="name" value="<%score.name%>">
+    Score: <input type="text" name="score" value="<%score.score%>">
+  
+   <br>
+   <div class ="update">
+    <input type="submit" name="" value="Update Score"/>
+    </div>
+</form>
+</div>
 
+<div class = "Home-Button">
 <a href='/scores'>Home</a>
 
 
-<a href="/scores/edit">edit score</a>
+
+<!-- <a href="/scores/edit">edit score</a> -->
 </div>
 </body>
 
